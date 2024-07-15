@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Configuração padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global para o corpo da página */
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: #000000;
+    padding: 1em 0;
+}
+
+/* Estilo para a lista de navegação dentro do cabeçalho */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0 1em;
+    transition: opacity 0.5s ease;
+}
+
+/* Estilo para cada item da lista de navegação */
+nav ul li {
+    margin-left: 2em;
+    transition: opacity 0.5s ease;
+    animation: fadeInStatic 1s ease-out forwards;
+}
+
+/* Estilo para os links dentro dos itens da lista de navegação */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: opacity 0.5s ease;
+}
+
+/* Estilo para os links quando o mouse passa por cima */
+nav ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/* Estilo para a seção principal do conteúdo */
+main {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para cabeçalhos de tamanho 1 */
+h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Estilo para cabeçalhos de tamanho 2 */
+h2 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    opacity: 0;
+    animation-delay: 1s;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Estilo para parágrafos */
+p {
+    font-size: 1.2em;
+    animation-delay: 1s;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Seção específica para a página inicial */
+.section {
+    padding: 2em;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #111111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Media query para telas menores que 768px de largura */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .section {
+        padding: 1em;
+    }
+}
+
+/* Estilo para os links sociais abaixo do formulário de contato */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    animation-delay: 1s;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Estilo para cada link social */
+.social-links a {
+    margin: 0 1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Estilo para os links sociais quando o mouse passa por cima */
+.social-links a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/* Estilo para a seção de Projetos */
+#projetos {
+    color: #ffffff;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+/* Estilo para cada projeto */
+.projeto {
+    background-color: #444444;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Estilo para a imagem dentro do projeto */
+.projeto img {
+    border-radius: 10px;
+    margin-left: 20em;
+    width: 150px;
+    height: auto;
+}
+
+/* Estilo para o título do projeto */
+.projeto h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para a descrição do projeto */
+.projeto p {
+    font-size: 1.2em;
+}
+
+/* Estilo para o link dentro do projeto */
+.projeto a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para o link quando o mouse passa por cima */
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Animação de fade-in para o menu de navegação */
+@keyframes fadeInStatic {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animação de fade-in que sobe para o texto principal */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Desativa qualquer animação */
+.no-animation {
+    animation: none;
+}
+
+/* Layout da seção Sobre mim */
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container do texto dentro da seção Sobre mim */
+.text-content {
+    flex: 1;
+    max-width: 60%;
+}
+
+/* Container da imagem dentro da seção Sobre mim */
+.image-content {
+    flex: 0 0 auto;
+    margin-left: 20px;
+}
+
+/* Imagem */
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out forwards;
+}
