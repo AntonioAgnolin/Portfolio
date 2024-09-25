@@ -194,6 +194,7 @@ footer {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1em;
     margin-bottom: 2em;
     max-width: 100%; 
@@ -206,6 +207,7 @@ footer {
     max-width: 300px;
     width: 100%;
     height: auto;
+    margin-left: 1em;
 }
 
 /* Estilo para o título do projeto */
