@@ -97,6 +97,7 @@ footer {
     background-color: #111111;
     padding: 10px 0;
     text-align: center;
+    font-size: 12px;
 }
 
 /* Media query para desktops e tablets maiores */
@@ -124,6 +125,7 @@ footer {
 @media (max-width: 480px) {
     nav ul {
         justify-content: center;
+        padding: 0;
     }
 
     nav ul li {
@@ -131,62 +133,61 @@ footer {
         margin-bottom: 1em;
     }
 
+    main {
+        padding: 1em;
+        text-align: center;
+    }
+
     .projeto {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0.5em;
+        padding: 1em;
+        margin-bottom: 2em;
     }
 
     .projeto img {
-        width: 100%;
-        max-width: 300px;
-        margin: 1em 0;
-    }
-
-    main {
-        padding: 1em;
-    }
-
-    .section {
-        padding: 1em;
-    }
-
-    .sobre-content {
-        flex-direction: column;
         align-items: center;
+        margin-right: 1em;
     }
 
-    .text-content {
-        flex: 1;
-        max-width: 200%;
+    .projeto-content {
+        text-align: left;
     }
 
-    .image-content {
-        margin-left: 0;
-        margin-top: 1em;
-    }   
-
-    .image-content img {
-        width: 100%;
-        max-width: 300px;
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
     }
 
-    .social-links {
-        flex-direction: column;
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
     }
 
-    .social-links a {
-        margin: 0.5em 0;
+    .projeto h4 {
+        font-size: 1.3em;
+    }
+
+    .projeto p {
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+
+    .projeto a {
+        font-size: 1em;
+        margin-top: 0.5em;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    footer {
+        padding: 1em 0;
+        font-size: 12px;
+        text-align: center;
     }
 }
 
-/* Estilo para a seção de Projetos */
-#projetos {
-    color: #ffffff;
-    padding: 1em;
-    margin-bottom: 3em;
-}
 
 /* Estilo para cada projeto */
 .projeto {
@@ -261,6 +262,16 @@ footer {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/*Estilo para apresentação do conteúdo dos projetos*/
+.projeto-content {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
 /* Estilo para os links sociais abaixo do formulário de contato */
 .social-links {
     display: flex;
@@ -282,6 +293,32 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+/* Estilo para definir o tamanho da logo na página do projeto */
+.logo-project {
+    display: block; 
+    margin: 0 auto; 
+    width: 80%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    margin-top: 10px;
+}
+
+/* Estilo para centralizar o texto da página do projeto */
+.text-project {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Estilo para a imagem dentro da página do projeto */
+.image-project img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 800px;
 }
 
 /* Animação de fade-in para o menu de navegação */
