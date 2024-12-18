@@ -54,6 +54,24 @@ nav ul li a:hover {
     opacity: 0.7;
 }
 
+/* Estilo específico para o link "Voltar" */
+.back-link {
+    font-size: 1.2em;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estilo para o link "Voltar" quando o mouse passa por cima */
+.voltar-link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
 /* Estilo para a seção principal do conteúdo */
 main {
     flex: 1;
@@ -80,6 +98,17 @@ h2 {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/* Estilo para cabeçalhos de tamanho 3 */
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    opacity: 0;
+    animation-delay: 1s;
+    animation: fadeInUp 1s ease-out forwards;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
 /* Estilo para parágrafos */
 p {
     font-size: 1.2em;
@@ -100,32 +129,10 @@ footer {
     font-size: 12px;
 }
 
-/* Media query para desktops e tablets maiores */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 1em;
-    }
-
-    main {
-        padding: 1em;
-    }
-
-    .section {
-        padding: 1em;
-    }
-}
-
 /* Media query para dispositivos móveis */
 @media (max-width: 480px) {
     nav ul {
         justify-content: center;
-        padding: 0;
     }
 
     nav ul li {
@@ -181,6 +188,45 @@ footer {
         text-decoration: none;
     }
 
+    .section {
+        padding: 1em;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-text {
+        max-width: 100%;
+        font-size: 1.1em;
+        margin-bottom: 1em;
+    }
+
+    .sobre-image {
+        margin-top: 1em;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }       
+
+    .sobre-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        margin: 0.5em 0;
+    }
+
     footer {
         padding: 1em 0;
         font-size: 12px;
@@ -188,6 +234,26 @@ footer {
     }
 }
 
+/* Media query para desktops e tablets maiores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .section {
+        padding: 1em;
+    }
+}
 
 /* Estilo para cada projeto */
 .projeto {
@@ -242,19 +308,19 @@ footer {
 }
 
 /* Container do texto dentro da seção Sobre mim */
-.text-content {
+.sobre-text {
     flex: 1;
     max-width: 100%;
 }
 
 /* Container da imagem dentro da seção Sobre mim */
-.image-content {
+.sobre-image {
     flex: 0 0 auto;
     margin-left: 20px;
 }
 
 /* Imagem */
-.image-content img {
+.sobre-image img {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -306,7 +372,7 @@ footer {
 }
 
 /* Estilo para centralizar o texto da página do projeto */
-.text-project {
+.project-text {
     text-align: center;
     margin: 0 auto;
 }
@@ -319,6 +385,21 @@ footer {
     width: 100%;
     margin: 2rem auto;
     max-width: 800px;
+}
+
+/* Estilo específico para o parágrafo com a classe .descricao-wireframe */
+.wireframe-description {
+    font-size: 1.2em;
+    animation-delay: 1s;
+    animation: fadeInUp 1s ease-out forwards;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+/* Estilo para as imagens dos wireframes */
+.wireframe-img {
+    width: 800px;
+    height: auto;
 }
 
 /* Animação de fade-in para o menu de navegação */
